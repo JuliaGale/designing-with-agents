@@ -1,0 +1,19 @@
+name: Token audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  token-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Exits 1 on any error (raw colours, spacing, font sizes, radii, shadows, z-index; unknown or Layer 1 tokens in components; undefined token references; token-reference.md out of sync).
+      - run: node scripts/token-audit.js
+      # Exits 1 if a study's hero, Featured card or Next case study band shows anything other than its cover (lavender/DESIGN.md → Cover).
+      - run: node scripts/cover-check.js
