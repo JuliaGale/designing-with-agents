@@ -23,7 +23,7 @@ I'm a product designer specialising in design systems. I design the site, set th
 | `scripts/cover-check.js` | Fails if a case study's hero, its card on Home or the Next case study band shows anything other than its cover | The same product shown three different ways |
 | `scripts/hooks/after-edit.mjs` | The hook: runs both checks after each edit | A rule that exists but isn't followed |
 
-`AGENTS.md` and `CLAUDE.md` also point to the site's design docs (`lavender/PRODUCT.md`, `lavender/DESIGN.md`) and its component specs (`specs/`). Those stay in the private repository with the site.
+`AGENTS.md` and `CLAUDE.md` also point to the site's design docs (`lavender/PRODUCT.md`, `lavender/DESIGN.md`), its component specs (`specs/`) and the cover script (`scripts/make-cover.mjs`). Those stay in the private repository.
 
 The tokens come in three layers: palette steps, then roles (`--color-text`, `--space-24`…), then components. Components may only use roles, so one change to a role recolours the whole site, and the agent can't reach for a raw colour.
 

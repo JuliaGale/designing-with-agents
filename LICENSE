@@ -1,8 +1,8 @@
 Copyright (c) 2026 Julia Gale. All rights reserved.
 
-This repository holds the website juliagale.com: its design, writing, images,
-design tokens, specs, rules for coding agents, and code. All of it is the work of
-Julia Gale, designed and directed by her and built with Claude Code.
+This repository holds rule files, checks and an agent hook from the private
+repository behind juliagale.com. All of it is the work of Julia Gale, designed and
+directed by her and built with Claude Code.
 
 No permission is granted to copy, modify, publish or distribute any part of it
 without Julia Gale's written permission.
